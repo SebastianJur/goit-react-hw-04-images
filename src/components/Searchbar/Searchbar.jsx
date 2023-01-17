@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 class Searchbar extends Component {
   render() {
-    const { onSubmit, onChange, onClickClear, query } = this.props;
+    const { onSubmit, onChange, query } = this.props;
     return (
       <header className={css.searchBar}>
         <form className={css.searchForm} onSubmit={onSubmit}>
