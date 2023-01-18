@@ -30,7 +30,6 @@ class Searchbar extends Component {
 Searchbar.propTypes = {
   onSubmit: PropTypes.func,
   onChange: PropTypes.func,
-  onClickClear: PropTypes.func,
   query: PropTypes.string,
 };
 

@@ -120,7 +120,6 @@ class App extends Component {
             handleLoadMore={this.handleLoadMore}
           />
         ) : (
-          <div style={{ height: 40 }}></div>
         )}
         {showModal && (
           <Modal onClose={this.onClose} largeImageURL={largeImageURL} />
