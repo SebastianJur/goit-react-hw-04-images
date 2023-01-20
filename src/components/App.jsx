@@ -114,12 +114,8 @@ class App extends Component {
             </p>
           )}
         </Section>
-        {page < lastPage && !isLoading && !error ? (
-          <Button
-            label={'Load more'}
-            handleLoadMore={this.handleLoadMore}
-          />
-        ) : (
+        {page < lastPage && !isLoading && !error && (
+          <Button label={'Load more'} handleLoadMore={this.handleLoadMore} />
         )}
         {showModal && (
           <Modal onClose={this.onClose} largeImageURL={largeImageURL} />
