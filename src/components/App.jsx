@@ -26,10 +26,6 @@ class App extends Component {
     this.setState({ query: event.target.value });
   };
 
-  onClickClear = () => {
-    this.setState({ query: '' });
-  };
-
   fetchImagesByQuery = async searchQuery => {
     this.setState({ isLoading: true, error: null, noResults: false });
     try {
@@ -97,7 +93,6 @@ class App extends Component {
         <Searchbar
           onSubmit={this.handleSubmit}
           onChange={this.handleChange}
-          onClickClear={this.onClickClear}
           query={this.state.query}
         />
         <Section>

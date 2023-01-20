@@ -19,6 +19,7 @@ class ImageGalleryItem extends Component {
 }
 
 ImageGalleryItem.propTypes = {
+  id: PropTypes.number,
   webformatURL: PropTypes.string,
   largeImageURL: PropTypes.string,
   onImageClick: PropTypes.func,
